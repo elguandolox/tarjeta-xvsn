@@ -665,16 +665,21 @@ footer p {
 
 .countdown {
   display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .countdown div {
+  flex: 1 1 0;
+  min-width: 0;
   background: rgba(255, 192, 203, 0.15);
-  padding: 30px 25px;
+  padding: 30px 20px;
   border-radius: 20px;
-  min-width: 100px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 192, 203, 0.3);
@@ -704,6 +709,44 @@ footer p {
   font-size: 1.1rem;
 }
 
+/* Responsive Android */
+@media (max-width: 480px) {
+  .countdown {
+    gap: 10px;
+    padding: 0 5px;
+  }
+  
+  .countdown div {
+    padding: 20px 8px;
+  }
+  
+  .countdown span {
+    font-size: 2rem;
+  }
+  
+  .countdown p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .countdown {
+    gap: 6px;
+    padding: 0 3px;
+  }
+  
+  .countdown div {
+    padding: 15px 5px;
+  }
+  
+  .countdown span {
+    font-size: 1.8rem;
+  }
+  
+  .countdown p {
+    font-size: 0.75rem;
+  }
+}
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 /* 📅 CALENDARIO - Optimizado para móviles                     */
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
