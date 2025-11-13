@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis XV - Sofía Tamayo</title>
+
+  <!-- 🎀 Google Fonts - Fuentes de Princesa -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Great+Vibes&family=Dancing+Script:wght@400;600;700&family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+
+  <!-- 🎨 CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ✨ Efecto de brillos sobre el fondo -->
+  <div class="sparkle-overlay"></div>
+
+  <!-- 🌸 Portada -->
+  <section class="hero animado">
+    <div class="overlay"></div>
+    <div class="flower-pattern"></div>
+    <div class="content">
+
+      <!-- 🌸 Título elegante - MIS XV AÑOS -->
+      <div class="titulo-container">
+        <div class="decoracion-esquina top-left">🌸✨</div>
+        <div class="decoracion-esquina top-right">✨🌸</div>
+        
+        <div class="titulo-wrapper">
+          <p class="texto-invitacion">Te invito a</p>
+          <h1 class="titulo-principal">MIS XV AÑOS</h1>
+        </div>
+
+        <div class="decoracion-esquina bottom-left">💖🌺</div>
+        <div class="decoracion-esquina bottom-right">🌺💖</div>
+      </div>
+
+      <h2 class="name">Sofía Tamayo</h2>
+
+      <button id="music-btn" class="music-btn">🔊 Música (On)</button>
+      <audio id="music" src="music/musica.wav" loop></audio>
+
+      <p class="date">06 de Diciembre de 2025</p>
+    </div>
+  </section>
+
+  <!-- ⏳ Cuenta regresiva -->
+  <section class="countdown-section animado">
+    <div class="flower-pattern"></div>
+    <h2>¡Faltan para el gran día!</h2>
+    <div class="countdown">
+      <div><span id="days">00</span><p>Días</p></div>
+      <div><span id="hours">00</span><p>Horas</p></div>
+      <div><span id="minutes">00</span><p>Minutos</p></div>
+      <div><span id="seconds">00</span><p>Segundos</p></div>
+    </div>
+  </section>
+
+  <!-- 📅 Calendario -->
+  <section class="calendar-section animado">
+    <div class="flower-pattern"></div>
+    <h2>Calendario del evento</h2>
+    <div class="calendar">
+      <div class="month">Diciembre 2025</div>
+      <div class="days">
+        <span>Dom</span><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span>
+      </div>
+      <div class="dates">
+        <span></span>
+        <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+        <span class="event-day">6<br><img src="" alt=""></span>
+        <span>7</span><span>8</span><span>9</span><span>10</span><span>11</span>
+        <span>12</span><span>13</span><span>14</span><span>15</span>
+        <span>16</span><span>17</span><span>18</span><span>19</span><span>20</span>
+        <span>21</span><span>22</span><span>23</span><span>24</span><span>25</span>
+        <span>26</span><span>27</span><span>28</span><span>29</span><span>30</span><span>31</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💖 Información del evento -->
+  <section class="info animado">
+    <div class="flower-pattern"></div>
+    <h2>Te espero para celebrar</h2>
+    <p>📍 Alto de los Ospina, Cl. 94b Sur #51-106, La Estrella, Antioquia</p>
+    <p>🕗 7:00pm</p>
+    <p class="mensaje-especial">Deseamos tu presencia para acompañarme en mi noche especial 🩵</p>
+  </section>
+
+  <!-- 👗 Código de vestimenta -->
+  <section id="vestimenta" class="dresscode-section animado">
+    <div class="flower-pattern"></div>
+    <h2>Código de Vestimenta</h2>
+    <p class="subtext">Queridos invitados, queremos que todos luzcan increíbles ✨</p>
+
+    <div class="dresscode-container">
+      <div class="group">
+        <img src="images/traje.svg" alt="Traje elegante" class="dress-icon" />
+        <h3>Jóvenes</h3>
+        <p>Elegancia en blanco y negro. ¡Luce moderno y sofisticado!</p>
+      </div>
+
+      <div class="divider">💍</div>
+
+      <div class="group">
+        <img src="images/vestido.svg" alt="Vestido elegante" class="dress-icon" />
+        <h3>Adultos</h3>
+        <p>Evitar la utilización de tonos pastel.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💌 Lluvia de sobres -->
+  <section id="lluvia" class="sobres-section animado">
+    <div class="flower-pattern"></div>
+    <div class="sobres-overlay">
+      <h2> Lluvia de Sobres </h2>
+      <p>Tu cariño y buenos deseos son el mejor regalo que puedo recibir en este día tan especial.</p>
+    </div>
+  </section>
+
+  <!-- 📍 Ubicación -->
+  <section id="ubicacion" class="map-section animado">
+    <div class="flower-pattern"></div>
+    <h2>📍 Ubicación del Evento</h2>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.440122184406!2d-75.6381923!3d6.1372137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4681459bd660bb%3A0xe2e513f18ea1d4b!2sSan%20Gabriel%20Eventos!5e0!3m2!1ses!2sco!4v1730720000000!5m2!1ses!2sco"
+        width="100%"
+        height="350"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <a href="https://www.google.com/maps/place/San+Gabriel+Eventos/@6.1372137,-75.6381923,17.41z"
+       target="_blank"
+       class="map-btn">🗺️ Abrir en Google Maps</a>
+  </section>
+
+  <!-- 💬 Confirmar asistencia -->
+  <section class="confirm animado">
+    <div class="flower-pattern"></div>
+    <h2>Confirma tu asistencia</h2>
+    <a href="https://wa.me/573052492554?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20los%20XV%20de%20Sofía%20Tamayo%20🥳"
+       target="_blank"
+       class="btn-confirm">Confirmar por WhatsApp</a>
+  </section>
+
+  <!-- 🌸 Footer -->
+  <footer>
+    <p> Mis XV Sofía Tamayo | 2025 </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
